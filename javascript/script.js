@@ -55,7 +55,7 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 }
 
-function copiarTexto() {
+function copiarTexto(){
     var mensajeTextarea = document.querySelector(".mensaje");
     var texto = mensajeTextarea.value;
 
