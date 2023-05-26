@@ -1,0 +1,260 @@
+*{
+    background: #E5E5E5;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    position: relative;
+    width: 3%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.contenedor{
+    position: relative;
+    height: 87vh;
+    width: 90vw;
+    margin: auto;
+}
+
+.ingreso-texto{
+    width: 440px;
+    margin: 0 20px;
+    background: #E5E5E5;
+}
+
+.text-area{
+    margin: 20px 20px;
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+::placeholder {color: #0A3871;}
+    .text-area:focus{
+        outline: none;
+    }
+
+.informacion{
+    color: #495057;
+    font-size: 15px;
+    margin: 0 0 15px 20px;
+     line-height: 150%;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 64px;
+    width: 205px;
+    margin-left: 20px;
+}
+
+.btn-desencriptar{
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 64px;
+    margin-left: 1px;
+    width: 205px;
+}
+
+.mensaje{
+    border: none;
+    background: white;
+    height: 81%;
+    width: 90%;
+    color: #495057;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.texto-encriptado{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    width: 30%;
+    height: 630px;
+    left: 65%;
+    top: 0;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+}
+
+.mensaje-encriptado{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 95%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2 {
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+    background: white;
+}
+
+.mensaje-encriptado p {
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    background: white;
+}
+
+.texto-encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+    background: white;
+}
+
+.btn-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 62px;
+    margin-left: 0%;
+    bottom: 8px;
+    position: absolute;
+    width: 200px;
+}
+
+@media screen and (max-width:820px){
+    .contenedor{
+        display: block;
+        width: 780px;
+        margin: auto;
+    }
+    .ingreso-texto{
+        width: auto;
+    }
+
+    .botones{
+        width: 780px;
+        margin: auto;
+        position: relative;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+        display:inline;
+        margin: 0 0 0 20px;
+        width: 350px;
+    }
+
+    .mensaje{
+        margin-top: 3%;
+        height: 50%;
+        font-size: 18px;
+    }
+
+    .texto-encriptado{
+        position: relative;
+        height: 40%;
+        width: 90%;
+        left: 5%;
+        top: 5%;
+    }
+
+    .mensaje-encriptado{
+        width: 93%;
+        top: 25%;
+        padding-bottom: 15px;
+    }
+
+    .texto-encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .btn-copiar{
+        position: absolute;
+        height: 52px;
+        margin-left: 0%;
+        bottom: 5px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .contenedor{
+        display: block;
+        width: 480px;
+        height: 80vh;
+    }
+
+    .botones{
+        width: 480px;
+        margin: auto;
+    }
+
+    .mensaje{
+        width: 95%;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        display:block;
+        margin: 0 40px 10px;
+        width: 400px;
+    }
+
+    .texto-encriptado{
+        position: relative;
+        height: 44%;
+        width: 90%;
+        left: 8%;
+        top: 5%;
+    }
+
+    .mensaje-encriptado{
+        width: 93%;
+        top: 15%;
+        padding-bottom: 15px;
+    }
+
+    .texto-encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .btn-copiar{
+        position: absolute;
+        height: 52px;
+        margin-left: 0%;
+        bottom: 5px;
+        width: 350px;
+    }
+}
